@@ -7,9 +7,9 @@ interface MockAccount {
 }
 
 export const MOCK_USER: User = {
-  id: "user_demo",
+  id: "superuser",
   email: "caoyun880@yahoo.com",
-  name: "Demo Traveler",
+  name: "Caoyun",
 };
 
 export const MOCK_ACCOUNTS: MockAccount[] = [
