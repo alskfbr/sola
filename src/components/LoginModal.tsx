@@ -101,7 +101,7 @@ export default function LoginModal({ open, onClose, onSuccess }: Props) {
         </form>
         {import.meta.env.DEV && (
           <p className="hint">
-            Demo account: <code>demo@drift.travel</code> / <code>drift123</code>
+            Demo account: <code>demo@sola.travel</code> / <code>sola123</code>
           </p>
         )}
       </div>

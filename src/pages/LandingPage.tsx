@@ -59,7 +59,7 @@ export default function LandingPage() {
     <div className="landing">
       <header className="topbar">
         <Link to="/" className="brand">
-          drift
+          sola
         </Link>
         {isAuthed ? (
           <Link to="/app" className="btn btn-ghost">
@@ -77,7 +77,7 @@ export default function LandingPage() {
           Plan trips. <span className="accent">Paint your world.</span>
         </h1>
         <p className="lead">
-          Drift turns your travel plans into a living 3D globe. Build
+          Sola turns your travel plans into a living 3D globe. Build
           itineraries, track where you've been, and dream up where to go next.
         </p>
         {primaryCta}
@@ -93,7 +93,7 @@ export default function LandingPage() {
       </section>
 
       <footer className="landing-footer muted">
-        © {new Date().getFullYear()} Drift
+        © {new Date().getFullYear()} Sola
       </footer>
 
       <LoginModal

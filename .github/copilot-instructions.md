@@ -1,4 +1,4 @@
-# Copilot instructions — Drift
+# Copilot instructions — Sola
 
 Travel itinerary planner (Wanderlog-like). **Read [docs/REQUIREMENTS.md](../docs/REQUIREMENTS.md) for product scope before making changes**, and keep it updated when requirements change.
 

@@ -8,12 +8,12 @@ interface MockAccount {
 
 export const MOCK_USER: User = {
   id: "user_demo",
-  email: "demo@drift.travel",
+  email: "demo@sola.travel",
   name: "Demo Traveler",
 };
 
 export const MOCK_ACCOUNTS: MockAccount[] = [
-  { user: MOCK_USER, password: "drift123" },
+  { user: MOCK_USER, password: "sola123" },
 ];
 
 type ItemSeed = Omit<ItineraryItem, "id">;

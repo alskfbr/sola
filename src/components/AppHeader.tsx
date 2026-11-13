@@ -13,7 +13,7 @@ export default function AppHeader() {
   return (
     <header className="topbar app-topbar">
       <Link to="/app" className="brand">
-        drift
+        sola
       </Link>
       <div className="topbar-right">
         <span className="muted">{user?.name}</span>
