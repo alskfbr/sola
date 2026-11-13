@@ -20,7 +20,7 @@ Update it when requirements change.
 - Login via email + password in a **modal** (not a separate page). Closes on Esc / backdrop / ×.
 - Shows an inline error for invalid credentials.
 - Session persists across reloads until it expires (mock: 7 days, stored in `localStorage`).
-- Mock account: `demo@sola.travel` / `sola123`.
+- Mock account: `caoyun880@yahoo.com` / `baobeiwoaini`.
 
 ## 3. Dashboard (`/app`)
 
@@ -65,7 +65,7 @@ Update it when requirements change.
 
 ## 6. Mock data (no backend yet)
 
-- 1 user (`demo@sola.travel`).
+- 1 user (`caoyun880@yahoo.com`).
 - **Sri Lanka Highlights** — 10 days, 2026-03-05 → 2026-03-14 (completed), Western/Central/North Central/Uva/Southern provinces.
 - **Uzbekistan** — 10 days, **no title and no dates** (draft) — exercises title fallback and draft status.
   Regions: Tashkent, Samarqand, Qashqadaryo, Bukhara, Xorazm.

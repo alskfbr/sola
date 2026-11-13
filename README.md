@@ -7,4 +7,4 @@ npm install
 npm run dev      # http://localhost:5173
 ```
 
-Demo login: `demo@sola.travel` / `sola123` (mock data, no backend).
+Demo login: `caoyun880@yahoo.com` / `baobeiwoaini` (mock data, no backend).
