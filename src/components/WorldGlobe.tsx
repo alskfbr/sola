@@ -58,10 +58,10 @@ export default function WorldGlobe({
   useEffect(() => {
     const controls = globeRef.current?.controls();
     if (controls) {
-      controls.autoRotate = !selectedId;
+      controls.autoRotate = !selectedId && !hoverId;
       controls.autoRotateSpeed = 0.35;
     }
-  }, [selectedId, size.width]);
+  }, [selectedId, hoverId, size.width]);
 
   const capColor = (obj: object) => {
     const { id } = (obj as GeoFeature).properties;
