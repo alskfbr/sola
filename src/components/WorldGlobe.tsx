@@ -12,7 +12,7 @@ interface Props {
 }
 
 const COLORS = {
-  visited: "rgba(245, 158, 11, 0.9)",
+  visited: "rgba(250, 204, 21, 0.9)",
   planned: "rgba(34, 211, 238, 0.85)",
   selected: "rgba(244, 63, 94, 0.95)",
   land: "rgba(148, 163, 184, 0.35)",

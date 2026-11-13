@@ -26,13 +26,13 @@ Update it when requirements change.
 
 ### 3.1 3D world globe
 
-- Interactive, rotatable 3D globe (`react-globe.gl`). Auto-rotates when nothing is selected.
+- Interactive, rotatable 3D globe (`react-globe.gl`). Auto-rotates when nothing is selected and the pointer is not hovering a country/region.
 - **Two view modes** (toggle):
   - **Countries** — Natural Earth admin-0 polygons.
   - **States / Provinces** — admin-1 polygons. Boundaries are loaded for every country that has a trip;
     clicking any other country loads its provinces on demand. Countries without admin-1 data stay as country polygons.
 - **Highlighting**
-  - `visited` (amber) — place appears in at least one **completed** trip.
+  - `visited` (yellow) — place appears in at least one **completed** trip.
   - `planned` (cyan) — place appears only in draft / upcoming / ongoing trips.
   - `visited` wins over `planned`. Selected place is shown in red.
 - **Click** a polygon → filter the trip list to trips containing that country (country mode) or
