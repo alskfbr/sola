@@ -50,6 +50,11 @@ export default function WorldGlobe({
   const globeRef = useRef<GlobeMethods | undefined>(undefined);
   const [containerRef, size] = useElementSize<HTMLDivElement>();
   const [hoverId, setHoverId] = useState<string | null>(null);
+  // Touch screens emit a sticky "hover" on tap; skip the hover effect there.
+  const canHover = useMemo(
+    () => window.matchMedia("(hover: hover)").matches,
+    [],
+  );
   const material = useMemo(
     () => new MeshPhongMaterial({ color: "#0b2545", shininess: 8 }),
     [],
@@ -110,9 +115,11 @@ export default function WorldGlobe({
           polygonAltitude={altitude}
           polygonLabel={label}
           polygonsTransitionDuration={250}
-          onPolygonHover={(obj) =>
-            setHoverId(obj ? (obj as GeoFeature).properties.id : null)
-          }
+          onPolygonHover={(obj) => {
+            if (canHover) {
+              setHoverId(obj ? (obj as GeoFeature).properties.id : null);
+            }
+          }}
           onPolygonClick={(obj, _event, { lat, lng }) => {
             const feature = obj as GeoFeature;
             const isSame = feature.properties.id === selectedId;
